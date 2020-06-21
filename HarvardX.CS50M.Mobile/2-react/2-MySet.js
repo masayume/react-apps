@@ -9,15 +9,15 @@ class MySet extends Set {
   
     add(val) {
       super.add(val)
-      console.log(`added ${val} to the set!`)
+      console.log(`added ${val} to the set!`)   // as the original add but with console.log
     }
   
     toArray() {
-      return Array.from(this)
+      return Array.from(this)   // returns an array
     }
   
     reset() {
-      return new MySet(this.originalArray)
+      return new MySet(this.originalArray)  // returns the original set
     }
   }
   
